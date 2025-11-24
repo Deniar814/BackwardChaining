@@ -1,0 +1,29 @@
+{
+    "Stroke Hemoragik (Berat)": {
+      "jenis": "Stroke Hemoragik",
+      "skala": "Berat",
+      "keterangan": "Merupakan stroke pendarahan akibat pecahnya pembuluh darah di otak yang mengakibatkan penumpukan dan menekan jaringan otak di sekitarnya sehingga harus ditangani langsung ke rumah sakit.",
+      "penanganan": "Sulit diobati dengan terapi mandiri di rumah; disarankan agar mendatangi dokter spesialis untuk penanganan lebih lanjut."
+    },
+    "Stroke Non-Hemoragik Tingkat 1": {
+      "jenis": "Stroke Non-Hemoragik",
+      "skala": "Tingkat 1",
+      "keterangan": "Kondisi dimana penderita merasakan gejala umum seperti emosional sensitif, gangguan penglihatan, sakit kepala dan nyeri dada.",
+      "penanganan": "Perbaiki pola hidup dan pola makan, lakukan kegiatan kecil di rumah, konsumsi makanan sehat, makan tepat waktu, istirahat cukup."
+    },
+    "Stroke Non-Hemoragik Tingkat 2": {
+      "jenis": "Stroke Non-Hemoragik",
+      "skala": "Tingkat 2",
+      "keterangan": "Kondisi dimana penderita mendapat gejala yang cukup serius karena syaraf penting terkena; penanganan masih dapat dilakukan bertahap sehingga penderita dapat pulih.",
+      "penanganan": "Konsumsi buah dan sayur, serta obat saraf sesuai anjuran dokter; terapi berkelanjutan sesuai rekomendasi medis."
+    },
+    "Stroke Non-Hemoragik Tingkat 3": {
+      "jenis": "Stroke Non-Hemoragik",
+      "skala": "Tingkat 3",
+      "keterangan": "Pada tingkat ini kondisi dimana penderita mengalami kontak syaraf yang mengakibatkan penderita mengalami stres berat dan mempengaruhi kondisi tubuh — biasanya berubah menjadi stroke berat yang harus ditangani oleh dokter spesialis saraf.",
+      "penanganan": "Segera konsultasi dan terapi pada dokter spesialis saraf untuk penanganan dan rehabilitasi lebih lanjut."
+    },
+    "sumber_pdf": "/mnt/data/MERKURIUS+VOL+2+SEPT+2024+Hal+338-350.pdf",
+    "sumber_gambar_tabel": "/mnt/data/6a3e01dd-6dff-4916-b891-34266b7145f8.png"
+  }
+  

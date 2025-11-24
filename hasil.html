@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Hasil Diagnosa (Backward Chaining)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card header">
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <h1>Hasil Diagnosa</h1>
+          <div class="subtitle">Backward Chaining — kesimpulan & persentase</div>
+        </div>
+      </div>
+      <div>
+        <button class="btn" id="back-gejala">Kembali ke Gejala</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div id="hasil-user" class="small-muted"></div>
+
+      <div id="final-conclusion" style="margin-top:10px"></div>
+
+      <ul id="hasil-list" class="hasil-list" style="margin-top:12px"></ul>
+
+      <div style="margin-top:12px" class="center">
+        <button class="btn" id="save-history">Simpan Riwayat</button>
+      </div>
+      <div class="small-muted" style="margin-top:8px">Simpan riwayat akan mencatat nama, umur, jenis kelamin, waktu, dan hasil diagnosa.</div>
+    </div>
+
+    <div class="card small-muted">
+      <h4>Penanganan singkat</h4>
+      <div id="rekomendasi"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

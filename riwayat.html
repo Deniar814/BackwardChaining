@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Riwayat Diagnosa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card header">
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <h1>Riwayat Diagnosa</h1>
+          <div class="subtitle">Rekam jejak diagnosa sebelumnya (disimpan di browser)</div>
+        </div>
+      </div>
+      <div>
+        <button class="btn" id="back-home">Kembali</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <table class="history-table" id="history-table">
+        <thead>
+          <tr><th>Waktu</th><th>Nama</th><th>Umur</th><th>JK</th><th>Hasil Utama</th><th>Detail</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div style="margin-top:12px" class="center">
+        <button class="btn ghost" id="clear-history">Hapus Riwayat</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

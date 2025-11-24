@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Sistem Pakar - Mulai Diagnosa (Backward Chaining)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card header">
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <h1>Sistem Pakar Diagnosa Stroke</h1>
+          <div class="subtitle">Metode Backward Chaining — sumber: jurnal Merkurius (2024)</div>
+        </div>
+      </div>
+      <div>
+        <button class="btn" id="goto-gejala">Mulai Diagnosa</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Data Pasien</h3>
+      <div class="form-row">
+        <div class="input">
+          <label>Nama</label>
+          <input id="nama" placeholder="Nama lengkap" />
+        </div>
+        <div class="input">
+          <label>Umur</label>
+          <input id="umur" type="number" placeholder="Umur (tahun)" />
+        </div>
+        <div class="input">
+          <label>Jenis Kelamin</label>
+          <select id="jk">
+            <option value="">-- Pilih --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-top:12px" class="center">
+        <button class="btn" id="start-btn">Mulai Diagnosa</button>
+      </div>
+      <div style="margin-top:10px" class="small-muted">
+        Setelah klik "Mulai Diagnosa" kamu akan diarahkan ke laman checklist gejala.
+      </div>
+    </div>
+
+    <div class="card">
+        <h3>Informasi Penyakit</h3>
+        <div class="small-muted">Lihat keterangan lengkap dari setiap penyakit.</div>
+      
+        <div style="margin-top:12px" class="center">
+            <button class="btn" id="info-penyakit-btn">Informasi Penyakit</button>
+
+        </div>
+      </div>
+      
+
+    <div class="footer card small-muted">
+      Backward Chaining — aplikasi tugas. Sumber data: Merkurius (2024).
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

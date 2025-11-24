@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Checklist Gejala (Backward Chaining)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card header">
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <h1>Checklist Gejala</h1>
+          <div class="subtitle">Centang gejala yang dirasakan pasien</div>
+        </div>
+      </div>
+      <div>
+        <button class="btn" id="to-home">Kembali</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div id="user-summary" class="small-muted"></div>
+      <h3>Pilih Gejala</h3>
+      <div id="gejala-grid" class="gejala-grid"></div>
+
+      <div style="margin-top:14px" class="form-row">
+        <button class="btn" id="proses-btn">Proses Diagnosa (Backward Chaining)</button>
+        <button class="btn ghost" id="info-penyakit-btn">Informasi Penyakit</button>
+      </div>
+      <div class="small-muted" style="margin-top:8px">Gunakan 'Informasi Penyakit' untuk melihat keterangan & penanganan dari jurnal.</div>
+    </div>
+
+    <div class="footer small-muted card">Sumber tabel: jurnal (lihat referensi di beranda).</div>
+  </div>
+
+  <!-- modal info penyakit -->
+  <div id="modal" class="modal-backdrop">
+    <div class="modal">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3>Informasi Penyakit</h3>
+        <button class="close-btn" id="close-modal">Tutup ✕</button>
+      </div>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+:root{
+    --bg:#eef6ff;
+    --card:#ffffff;
+    --primary:#0b66f1;
+    --accent:#0b9af1;
+    --muted:#6b7280;
+    --success:#2dd4bf;
+    --danger:#ff6b6b;
+    --card-radius:12px;
+    --shadow: 0 6px 20px rgba(11,102,241,0.08);
+}
+  
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family: Inter, system-ui, Arial, sans-serif;
+    background: linear-gradient(180deg,#e6f0ff 0%, #ffffff 100%);
+    color:#0f172a;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    min-height:100vh;
+}
+  
+.container{
+    max-width:980px;
+    margin:28px auto;
+    padding:22px;
+}
+  
+.card{
+    background:var(--card);
+    border-radius:var(--card-radius);
+    box-shadow:var(--shadow);
+    padding:18px;
+    margin-bottom:18px;
+}
+  
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:12px;
+}
+  
+.brand{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+  
+.logo{
+    width:52px;
+    height:52px;
+    border-radius:10px;
+    background:linear-gradient(135deg,var(--primary),var(--accent));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-weight:700;
+    font-size:18px;
+}
+  
+h1{margin:0;font-size:20px}
+.subtitle{color:var(--muted);font-size:14px;margin-top:6px}
+  
+.form-row{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:12px
+}
+  
+.input{
+    flex:1;
+    min-width:180px;
+    display:flex;
+    flex-direction:column;
+}
+  
+.input label{
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:6px
+}
+  
+.input input, 
+.input select{
+    padding:10px 12px;
+    border-radius:8px;
+    border:1px solid #e6eefc;
+    outline:none;
+    font-size:14px;
+    background:#fbfdff;
+}
+  
+.btn{
+    display:inline-block;
+    padding:10px 16px;
+    background:var(--primary);
+    color:white;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:0 6px 16px rgba(11,102,241,0.12);
+}
+  
+.btn.ghost{
+    background:transparent;
+    color:var(--primary);
+    border:1px solid rgba(11,102,241,0.12)
+}
+  
+.center{display:flex;justify-content:center;align-items:center}
+  
+.gejala-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+  
+.gejala-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #edf3ff;
+    background:linear-gradient(180deg,#fbfdff,#f6fbff);
+}
+  
+.gejala-label{
+    font-size:14px;
+}
+
+/* ================================
+   === CHECKBOX REVISI (FINAL) ===
+   ================================ */
+
+.gejala-check{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    cursor:pointer;
+}
+
+.real-checkbox{
+    display:none;
+}
+
+.checkbox-visual{
+    width:20px;
+    height:20px;
+    border-radius:6px;
+    border:2px solid #9dc7ff;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:white;
+    transition:0.2s;
+    cursor:pointer;
+}
+
+.real-checkbox:checked + .checkbox-visual{
+    background:var(--primary);
+    border-color:var(--primary);
+}
+
+.real-checkbox:checked + .checkbox-visual::after{
+    content:"✔";
+    color:white;
+    font-weight:900;
+    font-size:14px;
+}
+  
+/* ================================== */
+  
+.hasil-list{list-style:none;padding:0;margin:0}
+  
+.hasil-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:8px;
+    background:#f8fbff;
+    border:1px solid #e8f2ff
+}
+  
+.persen{
+    font-weight:700;
+    color:var(--primary)
+}
+  
+.top-pred{
+    font-size:16px;
+    margin-bottom:8px;
+    font-weight:700
+}
+  
+.small-muted{
+    font-size:13px;
+    color:var(--muted)
+}
+  
+.modal-backdrop{
+    position:fixed;
+    inset:0;
+    background:rgba(2,6,23,0.45);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    z-index:999;
+}
+  
+.modal{
+    width:720px;
+    max-width:100%;
+    background:white;
+    border-radius:12px;
+    padding:18px;
+}
+  
+.modal h3{margin-top:0}
+  
+.close-btn{
+    background:transparent;
+    border:0;
+    color:var(--muted);
+    cursor:pointer;
+    font-weight:700
+}
+  
+.history-table{
+    width:100%;
+    border-collapse:collapse
+}
+  
+.history-table th, 
+.history-table td{
+    padding:10px;
+    border-bottom:1px solid #f1f5f9;
+    font-size:14px
+}
+  
+.tag{
+    display:inline-block;
+    padding:6px 10px;
+    border-radius:8px;
+    background:#f1f8ff;
+    color:var(--primary);
+    font-weight:600
+}
+  
+.footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+    padding:12px;
+    margin-top:10px
+}
+  
+@media (max-width:760px){
+    .gejala-grid{
+        grid-template-columns:repeat(1,1fr)
+    }
+    .header{
+        flex-direction:column;
+        align-items:flex-start
+    }
+    .form-row{
+        flex-direction:column
+    }
+}
